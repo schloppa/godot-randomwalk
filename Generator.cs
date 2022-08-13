@@ -100,9 +100,7 @@ public class Generator : TileMap
             // Walker movement
             for (int i = 0; i < walkers.Count; i++)
             {
-                walker thisWalker = walkers[i];
-                thisWalker.pos += thisWalker.dir;
-                walkers[i] = thisWalker;
+                walkers[i].pos += walkers[i].dir;
             }
             for (int i = 0; i < walkers.Count; i++)
             {
